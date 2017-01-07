@@ -4,17 +4,17 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 // Check for jQuery.
+// TODO: Fix $(dom).velocity is not function bug
 if (typeof(jQuery) === 'undefined') {
-  var jQuery;
+  // var jQuery;
   // Check if require is a defined function.
   if (typeof(require) === 'function') {
-    jQuery = $ = require('jquery');
+    window.jQuery = window.$ = require('jquery');
   // Else use the dollar sign alias.
   } else {
-    jQuery = $;
+    window.jQuery = $;
   }
-}
-;/*
+}/*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
  * Uses the built in easing capabilities added In jQuery 1.1
