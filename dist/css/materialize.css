@@ -1,5 +1,5 @@
 /*!
- * Materialize v0.98.2 (http://materializecss.com)
+ * Materialize v0.98.2-custom-estado (http://materializecss.com)
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
@@ -5355,17 +5355,12 @@ button.btn-floating {
   transition: background-color .2s;
 }
 
-.btn-flat:focus, .btn-flat:active {
-  background-color: transparent;
-}
-
 .btn-flat:focus, .btn-flat:hover {
-  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
 }
 
-.btn-flat:active {
-  background-color: rgba(0, 0, 0, 0.2);
+.btn-flat:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-flat.disabled {
@@ -5673,6 +5668,7 @@ button.btn-floating {
 .collapsible-header {
   display: block;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   min-height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
